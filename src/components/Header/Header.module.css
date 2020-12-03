@@ -1,0 +1,8 @@
+.header {
+  grid-area: h;
+  background-image: linear-gradient(#e66465, #9198e5);
+}
+
+.header img {
+  max-height: 100%;
+}

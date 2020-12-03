@@ -1,0 +1,7 @@
+.nav {
+  grid-area: n;
+  background-image: linear-gradient(to right, #e66465, #9198e5);
+}
+.item {
+  color: black;
+}

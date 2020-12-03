@@ -1,0 +1,10 @@
+.main {
+  grid-area: m;
+  background-color: darkblue;
+  background-image: linear-gradient(to left, #e66465, #9198e5);
+}
+
+.main img {
+  width: 100%;
+  height: 200px;
+}
