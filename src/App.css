@@ -10,3 +10,8 @@
   margin: 0 auto;
   color: beige;
 }
+.app-wraper-content {
+  grid-area: m;
+  background-color: darkblue;
+  background-image: linear-gradient(to left, #e66465, #9198e5);
+}
