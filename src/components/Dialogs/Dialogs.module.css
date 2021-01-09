@@ -6,8 +6,8 @@
     padding: 20px;
 }
 .dialogItem {}
-.dialogItem.active {
-    color: blueviolet;
+.dialogItem a.active {
+    color: gold;
 }
 .messagesItems {
     padding: 20px;
