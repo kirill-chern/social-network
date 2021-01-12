@@ -3,7 +3,7 @@ import style from "./ProfileHeader.module.css";
 
 const ProfileHeader = () => {
     return (
-        <div>
+        <div className={style.profileHeader}>
             <div>
                 <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" />
             </div>
