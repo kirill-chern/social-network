@@ -2,6 +2,8 @@ import React from "react";
 import style from "./Profile.module.css";
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileHeader from "./ProfileHeader/ProfileHeader";
+import PropTypes from "prop-types";
+
 
 const Profile = (props) => {
     return (
@@ -11,5 +13,9 @@ const Profile = (props) => {
         </div>
     );
 };
+
+Profile.propTypes = {
+    state: PropTypes.objectOf(PropTypes.array).isRequired,
+  };
 
 export default Profile;

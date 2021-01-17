@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
@@ -8,6 +7,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
+import PropTypes from "prop-types";
 
 function App(props) {
   return (
@@ -25,6 +25,10 @@ function App(props) {
       </div>
     </BrowserRouter>
   );
+}
+
+App.propTypes = {
+  state: PropTypes.objectOf(PropTypes.object).isRequired,
 }
 
 export default App;

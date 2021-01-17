@@ -5,12 +5,37 @@
 .dialogsItems {
     padding: 20px;
 }
-.dialogItem {}
+.dialogItem:not(:first-child) {
+    margin-top: 10px;
+}
+.dialogItem a img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.dialogItem a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: cornsilk;
+}
+.dialogItem a div {
+    margin-left: 10px;
+}
 .dialogItem a.active {
     color: gold;
 }
 .messagesItems {
     padding: 20px;
 }
-.messageItem {}
+.messageItem:not(:first-child) {
+    margin-top: 30px;
+}
+
+.messageItem.messageOwner {
+    text-align: left;
+}
+.messageItem.messageFriend {
+    text-align: right;
+}
 
