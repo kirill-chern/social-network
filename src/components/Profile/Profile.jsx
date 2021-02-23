@@ -4,18 +4,19 @@ import MyPosts from "./MyPosts/MyPosts";
 import ProfileHeader from "./ProfileHeader/ProfileHeader";
 import PropTypes from "prop-types";
 
-
 const Profile = (props) => {
-    return (
-        <div>
-            <ProfileHeader />
-            <MyPosts posts={props.state.posts} />
-        </div>
-    );
+  return (
+    <div>
+      <ProfileHeader />
+      <MyPosts posts={props.state.posts}
+      inputFieldText={props.state.inputFieldText}
+      addPost={props.addPost} changeNewPostText = {props.changeNewPostText}/>
+    </div>
+  );
 };
 
 Profile.propTypes = {
-    state: PropTypes.objectOf(PropTypes.array).isRequired,
-  };
+  state: PropTypes.objectOf(PropTypes.array).isRequired,
+};
 
 export default Profile;
