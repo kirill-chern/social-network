@@ -2,18 +2,18 @@ import React from "react";
 import style from "./MyPosts.module.css";
 import Post from "./Post/Post";
 import PropTypes from "prop-types";
-import { changeInputFieldText } from "../../../data/state";
+import {addPostActionCreator, changeNewPostActionCreator} from "./../../../data/state";
 
 let newPostElement = React.createRef();
 
 const MyPosts = (props) => {
 function addPost() {
-  props.addPost();
+  props.dispatch(addPostActionCreator());
 }
 
 function postChange() {
   let text = newPostElement.current.value;
-  props.changeNewPostText(text);
+  props.dispatch(changeNewPostActionCreator(text));
 }
 
   return (
